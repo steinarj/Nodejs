@@ -2,6 +2,8 @@
 const fs = require('fs');
 const child_process = require('child_process');
  
+ console.log("start server");
+ 
 for(var i=0; i<3; i++) {
    var worker_process = child_process.fork("support.js", [i]);	
 	
