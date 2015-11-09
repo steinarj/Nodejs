@@ -1,4 +1,4 @@
-from ubuntu
-# Comment
-RUN echo 'we are running some # of cool things'
-#download ubuntu
+FROM ubuntu:latest
+RUN apt-get update
+RUN apt-get install -y nodejs
+RUN apt-get install -y npm
